@@ -1,0 +1,167 @@
+.nav-button {
+  color: #91703e;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: system-ui;
+}
+
+.divider {
+  border-color: rgb(255 195 86 / 25%);
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin: 10px;
+  row-gap: 1rem;
+}
+
+.logo-navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 0.1;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+.header-input-div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin-top: 3px;
+  margin-bottom: auto;
+  flex-basis: 450px;
+}
+
+.header-search-bar {
+  width: 80%;
+  height: 32px;
+  max-width: 400px;
+  padding-left: 15px;
+  border-radius: 13px;
+  border-width: thin;
+}
+
+@keyframes growBrandTile {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes shrinkBrandTile {
+  from {
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.brand-block {
+  width: 321px;
+  height: 225px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.brand-block:hover {
+  transform: scale(1.03);
+  box-shadow: rgb(219 161 46) 0px 6px 19px;
+}
+
+.brand-image-area {
+  position: relative;
+}
+
+.brand-logo {
+  width: 65%;
+}
+
+.comming-soon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 25px;
+  color: #946716c9;
+  font-family: fantasy;
+}
+
+.brand-tile-icon-area {
+  margin-top: 6px;
+}
+
+.brand-tile-icon-detail {
+  font-size: 11px;
+  font-family: sans-serif;
+  margin-top: 6px;
+}
+
+.brand-access-button {
+  position: absolute;
+  left: 123px;
+  bottom: 17px;
+  cursor: pointer;
+  background-color: orange;
+  width: 68px;
+  text-align: center;
+  border-radius: 12px;
+  height: 22px;
+  padding-top: 2px;
+  font-family: fantasy;
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+}
+
+.brand-block:hover .brand-access-button {
+  transform: scale(1.1);
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    left: -25px;
+  }
+
+  10% {
+    left: 72px;
+  }
+  20% {
+    left: -25px;
+  }
+}
+
+#shine {
+  transform: skew(-35deg);
+  bottom: -1px;
+  height: 40px;
+  width: 20px;
+  border-radius: 4px;
+  position: absolute;
+  left: 103px;
+  bottom: 17px;
+  background-color: rgb(255 255 255 / 47%);
+  top: -12px;
+  overflow: hidden;
+}
+
+.brand-block:hover #shine {
+  animation: slide 5s infinite;
+}
+
+.grid-brand-tiles {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.2rem;
+}
