@@ -27,8 +27,8 @@ const Navigations: React.FC<NavigationsProps> = () => {
       <NavLink className="nav-button" to="/trending">
         Trending
       </NavLink>
-      <NavLink className="nav-button" to="">
-        Microsites
+      <NavLink  style={{ color: "orange" }} className="nav-button" to="">
+        Microsite
       </NavLink>
       <NavLink className="nav-button" to="/pga">
         PGA Tab
