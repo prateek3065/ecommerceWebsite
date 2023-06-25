@@ -24,7 +24,7 @@ const Navigations: React.FC<NavigationsProps> = () => {
       <NavLink className="nav-button" to="/myBrands">
         My Brands
       </NavLink>
-      <NavLink className="nav-button" to="/trending">
+      <NavLink  style={{ color: "orange" }}  className="nav-button" to="/trending">
         Trending
       </NavLink>
       <NavLink  style={{ color: "orange" }} className="nav-button" to="">
